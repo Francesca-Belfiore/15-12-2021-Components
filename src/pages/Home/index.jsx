@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Home.module.scss";
 import Post from "../../components/Post";
 
@@ -50,25 +49,23 @@ const posts = [
 
 const Home = () => {
 
-    const [allPosts, setAllPosts] = useState(posts);
-
     return (
         <div className={styles.home}>
         <ul>
-            <li><a href="#">tutti</a></li>
-            <li><a href="#">musica</a></li>
-            <li><a href="#">live</a></li>
-            <li><a href="#">animazione</a></li>
-            <li><a href="#">mix</a></li>
-            <li><a href="#">videogiochi</a></li>
-            <li><a href="#">sketch</a></li>
-            <li><a href="#">recenti</a></li>
-            <li><a href="#">guardati</a></li>
-            <li><a href="#">novità</a></li>
+            <li><a href="/">tutti</a></li>
+            <li><a href="/">musica</a></li>
+            <li><a href="/">live</a></li>
+            <li><a href="/">animazione</a></li>
+            <li><a href="/">mix</a></li>
+            <li><a href="/">videogiochi</a></li>
+            <li><a href="/">sketch</a></li>
+            <li><a href="/">recenti</a></li>
+            <li><a href="/">guardati</a></li>
+            <li><a href="/">novità</a></li>
         </ul>
 
         <section>
-            {allPosts.map((post, index) => (
+            {posts.map((post, index) => (
                 <Post key={index} data={post} />
             ))}
         </section>

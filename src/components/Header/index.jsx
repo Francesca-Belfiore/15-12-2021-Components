@@ -22,10 +22,10 @@ const Header = (props) => {
             <nav>
                 <ul>
                     <li> 
-                        <a href="#">Crea</a>
-                        <a href="#">App</a>
-                        <a href="#">Notifiche</a>
-                        <a href="#">Account</a>
+                        <a href="/">Crea</a>
+                        <a href="/">App</a>
+                        <a href="/">Notifiche</a>
+                        <a href="/">Account</a>
                     </li>
                 </ul>
             </nav>
