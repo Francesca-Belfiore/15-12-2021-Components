@@ -1,5 +1,6 @@
 .home {
     overflow-y: scroll;
+    background-color: #17191d;
     
     ul {
         position: sticky;
@@ -27,8 +28,7 @@
         }
     }
     section {
-        background-color: #17191d;
-        height: 100%;
+        height: 537px;
 
         display: flex;
         flex-wrap: wrap;
